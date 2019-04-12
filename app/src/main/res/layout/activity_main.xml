@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#c0c0c0">
+
+    <TextView
+        android:id="@+id/TypeAndRun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type and Run"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#778899"
+        android:layout_centerHorizontal="true"/>
+    
+    <TextView
+        android:id="@+id/MakeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TypeAndRun"
+        android:text="Make:"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#778899"/>
+
+    <EditText
+        android:id="@+id/TxtMake"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:hint=""
+        android:layout_below="@id/MakeText"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/YearText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TxtMake"
+        android:text="Year:"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#778899"/>
+    <EditText
+        android:id="@+id/TxtYear"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:hint=""
+        android:layout_below="@+id/YearText"
+        />
+    <TextView
+        android:id="@+id/ColorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TxtYear"
+        android:text="Color:"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#778899"/>
+
+    <EditText
+        android:id="@+id/TxtColor"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_below="@+id/ColorText"
+        android:layout_marginTop="5dp"
+        android:hint=""
+        />
+    <TextView
+        android:id="@+id/PriceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TxtColor"
+        android:layout_marginTop="5dp"
+        android:text="Purchase Price (£):"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#778899"/>
+
+
+    <EditText
+        android:id="@+id/TxtPrice"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/PriceText"
+        android:layout_marginTop="5dp"
+        android:inputType="number"
+        android:hint=""
+        />
+    <TextView
+        android:id="@+id/EngineSizeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TxtPrice"
+        android:text="Engine size (litre):"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#778899"/>
+
+    <EditText
+        android:id="@+id/TxtEngineSize"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_below="@+id/EngineSizeText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:inputType="numberDecimal"
+        android:hint=""
+        />
+        <Button
+            android:id="@+id/BtnCreateCar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_below="@+id/TxtEngineSize"
+            android:layout_centerHorizontal="true"
+            android:text="Create Car"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/BtnCreateCar">
+    <TextView
+        android:id="@+id/TxtScroll"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        style="@style/customStyle"
+        android:scrollbars="vertical"
+        android:text=""
+        />
+    </ScrollView>
+</RelativeLayout>
